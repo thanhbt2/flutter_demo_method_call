@@ -35,14 +35,14 @@ class _HomeScreenState extends State<HomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text('Run on ${isPlatform()}: $_version'),
-            // const SizedBox(
-            //   height: 20,
-            // ),
-            // StreamBuilder<String>(
-            //   stream: PlatformServices.listenConnection(),
-            //   builder: (context, snapshot) =>
-            //       Text('Internet connected by: ${snapshot.data}'),
-            // ),
+            const SizedBox(
+              height: 20,
+            ),
+            StreamBuilder<String>(
+              stream: PlatformServices.listenConnection(),
+              builder: (context, snapshot) =>
+                  Text('Internet connected by: ${snapshot.data}'),
+            ),
           ],
         ),
       )),

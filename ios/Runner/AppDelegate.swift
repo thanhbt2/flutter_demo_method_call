@@ -25,7 +25,7 @@ import Network
       
       let flutterPlatformEvent = FlutterEventChannel(name: "os_event", binaryMessenger: controller.binaryMessenger)
       flutterPlatformEvent.setStreamHandler(self)
-      GeneratedPluginRegistrant.register(with: self)
+      GeneratedPluginRegistrant.register(withRegistry: self)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
     
